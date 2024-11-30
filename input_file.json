@@ -1,0 +1,34 @@
+{
+  "actions": [
+    {
+      "type": "create_port",
+      "ID": "port1",
+      "latitude": 12.34,
+      "longitude": 56.78
+    },
+    {
+      "type": "create_ship",
+      "ID": "ship1",
+      "fuel": 100,
+      "initial_port": "port1",
+      "total_weight_capacity": 2000,
+      "max_all_containers": 10,
+      "max_heavy_containers": 5,
+      "max_refrigerated_containers": 3,
+      "max_liquid_containers": 2,
+      "fuel_per_km": 1,
+      "ship_type": "medium"
+    },
+    {
+      "type": "create_container",
+      "port": "port1",
+      "weight": 100,
+      "container_type": "basic"
+    },
+    {
+      "type": "load_container",
+      "ship_id": "ship1",
+      "container_id": 0
+    }
+  ]
+}
