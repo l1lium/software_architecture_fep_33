@@ -1,0 +1,22 @@
+{
+    "ports": [
+      {
+        "ID": 0,
+        "latitude": 100.0,
+        "longitude": 200.0
+      }
+    ],
+    "ships": [
+      {
+        "ID": 1,
+        "fuel": 100.0,
+        "currentPortID": 0,
+        "totalWeightCapacity": 10000,
+        "maxNumContainers": 10,
+        "maxHeavyContainers": 5,
+        "maxRefrigeratedContainers": 2,
+        "maxLiquidContainers": 2,
+        "fuelConsumptionPerKM": 0.5
+      }
+    ]
+  }
