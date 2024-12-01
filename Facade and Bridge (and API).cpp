@@ -2,11 +2,6 @@
 #include <string>
 #include <unordered_map>
 
-#include "network/Server.hpp"
-#include "web/server/HttpConnectionHandler.hpp"
-#include "web/server/HttpRouter.hpp"
-
-
 using namespace std;
 
 
@@ -82,7 +77,7 @@ public:
 // ClimateControlSystem Class
 class ClimateControlSystem {
 public:
-    void setTemperature(int temp) { std::cout << "Setting temperature to " << temp << "°C.\n"; }
+    void setTemperature(int temp) { std::cout << "Setting temperature to " << temp << "Â°C.\n"; }
     void turnOnHeater() { std::cout << "Heater turned on.\n"; }
     void turnOnAC() { std::cout << "AC turned on.\n"; }
 };
@@ -255,14 +250,3 @@ int main() {
     return 0;
 }
 
-
-
-class MyController : public oatpp::web::server::api::ApiController {
-public:
-    MyController(const std::shared_ptr<ObjectMapper>& objectMapper)
-        : ApiController(objectMapper) {}
-
-    ENDPOINT("GET", "/", root) {
-        return createResponse(Status::CODE_200, "Hello, oat++!");
-    }
-};
