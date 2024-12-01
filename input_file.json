@@ -1,0 +1,51 @@
+{
+    "actions": [
+        {
+            "type": "create_port",
+            "ID": "portX",
+            "latitude": 39.45,
+            "longitude": -75.67
+        },
+        {
+            "type": "create_ship",
+            "ID": "shipZ",
+            "fuel": 350,
+            "initial_port": "portX",
+            "total_weight_capacity": 15000,
+            "max_all_containers": 50,
+            "max_heavy_containers": 25,
+            "max_refrigerated_containers": 15,
+            "max_liquid_containers": 10,
+            "fuel_per_km": 3,
+            "ship_type": "large"
+        },
+        {
+            "type": "create_container",
+            "port": "portX",
+            "weight": 300,
+            "container_type": "heavy"
+        },
+        {
+            "type": "create_container",
+            "port": "portX",
+            "weight": 150,
+            "container_type": "refrigerated"
+        },
+        {
+            "type": "create_container",
+            "port": "portX",
+            "weight": 80,
+            "container_type": "basic"
+        },
+        {
+            "type": "load_container",
+            "ship_id": "shipZ",
+            "container_id": 0
+        },
+        {
+            "type": "load_container",
+            "ship_id": "shipZ",
+            "container_id": 1
+        }
+    ]
+}
